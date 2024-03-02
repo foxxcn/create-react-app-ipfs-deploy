@@ -2,17 +2,9 @@
   text-align: center;
 }
 
-.React-logo {
+.cosmoglia-logo {
   max-width: 200px;
-  animation: React-logo-spin 6s linear infinite;
-}
-
-.Fleek-logo {
-  max-width: 400px;
-}
-
-.Big-plus {
-  font-size: calc(50px + 2vmin);
+  animation: combined-animation 6s linear infinite;
 }
 
 .App-header {
@@ -30,11 +22,36 @@
   color: #61dafb;
 }
 
-@keyframes React-logo-spin {
+.App-link:hover {
+  color: red; /* Change color to red on hover */
+}
+
+@keyframes cosmoglia-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-logo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5); /* Adjust the scale value as needed */
+  }
+}
+
+@keyframes combined-animation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(2.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }
